@@ -8,7 +8,7 @@ dotenv.config(
 )
 const db = process.env.DATABASE;
 mongoose.connect(db).then(()=>{
-    console.log("connection succes")
+    console.log("connection succes");
 }).catch((err)=>console.log(err))
 app.get('/',(req, res)=>{
     res.send(`Hello World`);
